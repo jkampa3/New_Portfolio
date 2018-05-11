@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -38,7 +40,9 @@
 
                 <img id="email" src="assets/images/email.png" alt="email">
                 <span>
-                    <img id="github" src="assets/images/github.jpg" alt="github">
+                    <a href="https://github.com/jkampa3/" target="_blank">
+                        <img id="github" src="assets/images/github.jpg" alt="github">
+                    </a>
                 </span>
                 <span>
                     <a href="http://www.linkedin.com/in/joseph-kampa" target="_blank">
@@ -58,20 +62,39 @@
 
     <!--modal for email-->
     <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Contact</h5>
+                    <h5 class="modal-title" id="modalTitle">To Contact JKampa, Please Submit Below</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="formNameInput">Name</label>
+                                <input type="text" class="form-control" id="formNameInput" placeholder="John Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="formEmailInput">Email</label>
+                                <input type="text" class="form-control" id="formEmailInput" placeholder="Doe.John@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="comment">Comment:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-primary">Contact</button>
                 </div>
             </div>
         </div>
