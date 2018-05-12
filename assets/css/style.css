@@ -14,7 +14,7 @@
     font-family: 'Abril Fatface', cursive;
 }
 
-img {
+#sidebar img {
     width: 50px;
     height: 50px;
     margin-right: 25px;
@@ -27,6 +27,30 @@ img {
 .modal-content {
     background-color: whitesmoke;
 }
+
+#aboutMeHeading {
+    margin-top: 10px;
+}
+
+#aboutMeSection {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+#aboutMePicture {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    height: 350px;
+    width: 250px;
+}
+
+#projectHeading {
+    margin-top: 10px;
+}
+
 
 /*
 font-family: 'Slabo 27px', serif;
